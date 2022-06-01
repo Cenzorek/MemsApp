@@ -27,6 +27,7 @@ import kanapa from './images/kanapa.jpg';
 import natura from './images/natura.jpg';
 import markowe from './images/markowe.jpg';
 
+
 let memesArray = [
   {
     id: 1,

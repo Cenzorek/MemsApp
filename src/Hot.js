@@ -2,13 +2,21 @@ import React from 'react';
 import Memy from './Memy';
 
 import { useEffect, useState } from 'react';
+import { useLocation } from "react-router-dom";
 
 const Hot = (props) => {
   const [hotMemes, setHotMemes] = useState(props.memes)
+  const location = useLocation();
+  
+    useEffect(() => {
+      if(location.pathname === "/hot") {
+        console.log("hot");
+      }
+    }, [location]);
 
-  useEffect(() => {
-    setHotMemes(props.memes)
-  }, [props.memes])
+    useEffect(() => {
+      setHotMemes(props.memes)
+    }, [props.memes])
 
 
   return (

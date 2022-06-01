@@ -7,7 +7,7 @@ const Nav = () => {
         <h1>HilariousPic</h1>
       <ul className="nav-links">
       <li>
-           <Link style={{textDecoration: 'none', color: 'white',}} to ="/hot">HOT</Link>
+           <Link className={`(location.pathname === "/hot") ? 'mark': ''`} style={{textDecoration: 'none', color: 'white',}} to ="/hot">HOT</Link>
       </li>
       <li>
           <Link style={{textDecoration: 'none', color: 'white'}}  to ="/regular">REGULAR</Link>

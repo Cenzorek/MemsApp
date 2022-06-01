@@ -1,7 +1,16 @@
 import Memy from './Memy';
-
-const Regular = (props) => {
-
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+  
+  const Regular = (props) => {
+    const location = useLocation();
+  
+    useEffect(() => {
+      if(location.pathname === "/regular") {
+        console.log("regular");
+      }
+    }, [location]);
+  
   return (
     <div className="containerR">
       <h1>Regular mems</h1>
@@ -12,6 +21,6 @@ const Regular = (props) => {
       />
     </div>
   )
-}
+  }
 
 export default Regular
