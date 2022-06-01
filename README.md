@@ -5,7 +5,9 @@ In the project directory, you  nedd to  run:
  `npm start` (probably you will have to install react-scripts)
 
 The app will open in  the development mode.
+
 *By clicking thumbsUp/thumbsDown you decide if mem goes to Hot or Regular section.
+
 *By dbclicking on the picture of mem , you are marking a mem as favourite.
 
 Author: Cenzorek/Ewelina Borowska
